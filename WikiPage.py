@@ -1,3 +1,5 @@
+# Written by Tommy Zaft
+
 from bs4 import BeautifulSoup
 import re
 import wikipedia
@@ -80,11 +82,12 @@ class WikiPage:
         Checks if the href is a valid Wikipedia link to click on as the first link in an article.
 
         :param link: the BeautifulSoup link.
+        :type link bs4.element.Tag
         :return:  True - if the link is ok to click on as a first link in an article
         False - not a valid link to click on.
         """
         url = str(link['href'])
-
+        print(type(link))
         # if it doesn't lead to a wiki page
         if not url.startswith("/wiki/"):
             return False
@@ -154,9 +157,9 @@ class WikiPage:
         
         Update 08.05.2021:
         ------------------
-        they fixed it since.
+        they fixed it since :)
         "Epistemology" -> branches of philosophy : "https://en.wikipedia.org/wiki/Outline_of_philosophy" ->
-        -> Philosophy :)
+        -> Philosophy.
         
         #if "Outline_of_philosophy" in url:
         #   return False

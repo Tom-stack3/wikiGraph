@@ -1,4 +1,6 @@
-from wiki_page import WikiPage
+# Written by Tommy Zaft
+
+from WikiPage import WikiPage
 import wikipedia
 # to draw the graph
 from graphviz import Digraph
@@ -11,14 +13,14 @@ import time
 # for the output label
 from datetime import datetime
 
-# for drawing random words
+# for getting random words
 from random_word import RandomWords
 
 # separator for printing
 SEP = "---------------------------"
 
 # we color the first pages a bit differently from the other pages.
-# Color Names documentation: https://graphviz.org/doc/info/colors.html
+# Nodes Color documentation: https://graphviz.org/doc/info/colors.html
 FIRST_PAGES_COLOR = "lightskyblue1"
 REGULAR_PAGES_COLOR = "lightskyblue"
 
@@ -237,7 +239,8 @@ def draw_random_pages(u, num_of_pages, debug=False):
 
 
 def main():
-    const_workfile_filename = "wiki_pages"
+    const_workfile_filename = "graph_drawn"
+
     '''
     The output file formats. I used .pdf and .svg which are both very convenient.
     I prefer .svg because the library supports making nodes clickable.
@@ -247,7 +250,8 @@ def main():
     output_file_formats = ["svg", "pdf", "jpg"]
     '''
     output_file_formats = ["svg", "pdf"]
-    num_of_pages = [5,5,5,5,5,5, 7, 10, 8, 5, 5, 8, 10, 8, 15, 15]
+
+    num_of_pages = [5, 5, 5, 5, 5, 5, 7, 10, 8, 5, 5, 8, 10, 8, 15, 15]
     for i in num_of_pages:
         if i < 1:
             continue
@@ -263,8 +267,8 @@ def main():
         print(len(names), names)
         first_pages, total_num_drawn = draw_list_of_page_names(names, u, False)
         '''
-        #first_pages, total_num_drawn = draw_random_pages(u, i, DEBUG)
-        names = ["russia","Space","coronavirus","real madrid","Art","lebron james","formula 1"]
+        # first_pages, total_num_drawn = draw_random_pages(u, i, DEBUG)
+        names = ["russia", "Space", "coronavirus", "real madrid", "Art", "lebron james", "formula 1"]
         first_pages, total_num_drawn = draw_list_of_page_names(names, u, False)
         '''num_of_pages_to_connect = int(input("how many pages? "))
         first_pages = []
