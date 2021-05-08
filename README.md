@@ -58,7 +58,7 @@ they represent.
 
 ## Loops found 😯
 
-Of course the "Getting to Philosophy" phenomenon doesn't happen in 100% percent of the cases, and they are some loopholes in it. Some
+Of course the "[Getting to Philosophy](https://en.wikipedia.org/wiki/Wikipedia:Getting_to_Philosophy)" phenomenon doesn't happen in 100% percent of the cases, and they are some loopholes in it. Some
 interesting loops of Wikipedia articles I found:
 
 - [Logic](https://en.wikipedia.org/wiki/Logic) ➜ [rules of inference](https://en.wikipedia.org/wiki/Rule_of_inference)
