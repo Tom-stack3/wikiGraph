@@ -71,7 +71,7 @@ interesting loops of Wikipedia articles I found:
   ➜ [Carbon fibers](https://en.wikipedia.org/wiki/Carbon_fibers) again :)\
   <small>notice that the first two links in [fibers](https://en.wikipedia.org/wiki/Fiber) are local links, leading to a
   section in the article, so we ignore and skip them:
-  ... "*is a <b><a href="#Natural_fibers">natural</a></b> or <b><a href="#Man-made_fibers">man-made</a></b> substance*"
+  ... "*is a <a href="#Natural_fibers">natural</a> or <a href="#Man-made_fibers">man-made</a> substance*"
   ...</small>
 
 <table style="width:20%">
