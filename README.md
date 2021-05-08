@@ -74,7 +74,7 @@ interesting loops of Wikipedia articles I found:
   ... "*is a <a href="#Natural_fibers">natural</a> or <a href="#Man-made_fibers">man-made</a> substance*"
   ...</small>
 
-<table style="width:20%">
+<table width="50%">
   <tr>
     <th><img src="./output_examples/loops_examples/logic.svg"></th>
     <th><img src="./output_examples/loops_examples/usa.svg"></th> 
