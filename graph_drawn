@@ -1,0 +1,11 @@
+strict digraph unix {
+	node [color=lightskyblue style=filled]
+	size="50,50"
+	"United States" [URL="https://en.wikipedia.org/wiki/United_States" color=lightskyblue1]
+	"United States" -> "Continental United States"
+	"Continental United States" [URL="https://en.wikipedia.org/wiki/Continental_United_States"]
+	"Continental United States" -> "U.S. state"
+	"U.S. state" [URL="https://en.wikipedia.org/wiki/U.S._state"]
+	"U.S. state" -> "United States"
+	"United States" [URL="https://en.wikipedia.org/wiki/United_States"]
+}
