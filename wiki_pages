@@ -1,0 +1,28 @@
+strict digraph unix {
+	node [color=lightskyblue style=filled]
+	size="50,50"
+	"Paul Alexander (British writer)" [URL="https://en.wikipedia.org/wiki/Paul_Alexander_(British_writer)" color=lightskyblue1]
+	"Paul Alexander (British writer)" -> "Neighbors from Hell"
+	"Neighbors from Hell" [URL="https://en.wikipedia.org/wiki/Neighbors_from_Hell"]
+	"Neighbors from Hell" -> "TBS (American TV channel)"
+	"TBS (American TV channel)" [URL="https://en.wikipedia.org/wiki/TBS_(American_TV_channel)"]
+	"TBS (American TV channel)" -> "Pay television"
+	"Pay television" [URL="https://en.wikipedia.org/wiki/Pay_television"]
+	"Pay television" -> "Subscription business model"
+	"Subscription business model" [URL="https://en.wikipedia.org/wiki/Subscription_business_model"]
+	"Subscription business model" -> "Business model"
+	"Business model" [URL="https://en.wikipedia.org/wiki/Business_model"]
+	"Business model" -> Explanation
+	Explanation [URL="https://en.wikipedia.org/wiki/Explanation"]
+	Explanation -> "Statement (logic)"
+	"Statement (logic)" [URL="https://en.wikipedia.org/wiki/Statement_(logic)"]
+	"Statement (logic)" -> Logic
+	Logic [URL="https://en.wikipedia.org/wiki/Logic"]
+	Logic -> "Rule of inference"
+	"Rule of inference" [URL="https://en.wikipedia.org/wiki/Rule_of_inference"]
+	"Rule of inference" -> "Logical form"
+	"Logical form" [URL="https://en.wikipedia.org/wiki/Logical_form"]
+	"Logical form" -> Logic
+	Logic [URL="https://en.wikipedia.org/wiki/Logic"]
+	label="\lGraph generated on 08/05/2021 18:36:23.\lChecked 1 pages. Time took: 0.18 minutes.\lNumber of pages drawn: 12"
+}
