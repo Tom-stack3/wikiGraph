@@ -44,7 +44,7 @@ You can go take a look on the checks it does, but in general we check the follow
 
 ## How the graph is generated?
 
-To generate the graph, I use a  very convenient open-source library I found called [Graphviz](https://graphviz.org/).
+To generate the graph, I use a very convenient open-source library I found called [Graphviz](https://graphviz.org/).
 
 ## Output formats
 
@@ -56,7 +56,24 @@ One advantage of **.SVG** over **.PDF** files is that it allows adding URL links
 very useful. Consequently, the nodes of the graphs in the **.SVG** files are clickable and lead to the Wikipedia page
 they represent.
 
-## Examples:
+## Loops found 😯
 
+Of course this phenomenon doesn't happen in 100% percent of the cases, and they are many loopholes in it. Some
+interesting loops of Wikipedia articles I found:
+
+- [Logic](https://en.wikipedia.org/wiki/Logic) ➜ [rules of inference](https://en.wikipedia.org/wiki/Rule_of_inference)
+  ➜ [Logical form](https://en.wikipedia.org/wiki/Logical_form) ➜ [Logic](https://en.wikipedia.org/wiki/Logic) again :)
+- [Contiguous United States](https://en.wikipedia.org/wiki/Contiguous_United_States)
+  ➜ [U.S. states](https://en.wikipedia.org/wiki/U.S._state)
+  ➜ [United States](https://en.wikipedia.org/wiki/United_States)
+  ➜ [Contiguous United States](https://en.wikipedia.org/wiki/Contiguous_United_States) again :)
+- [Carbon fibers](https://en.wikipedia.org/wiki/Carbon_fibers) ➜ [fibers](https://en.wikipedia.org/wiki/Fiber)
+  ➜ [Carbon fibers](https://en.wikipedia.org/wiki/Carbon_fibers) again :)\
+  <small>notice that the first two links in [fibers](https://en.wikipedia.org/wiki/Fiber) are local links, leading to a
+  section in the article, so we ignore and skip them:
+  ... "*is a <a href="#Natural_fibers">natural</a> or <a href="#Man-made_fibers">man-made</a> substance*"
+  ...</small>
+
+## Examples:
 
 <sup>*Created by Tommy Zaft*</sup>

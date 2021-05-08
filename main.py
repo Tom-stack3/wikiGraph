@@ -269,6 +269,7 @@ def main():
         '''
         # first_pages, total_num_drawn = draw_random_pages(u, i, DEBUG)
         names = ["russia", "Space", "coronavirus", "real madrid", "Art", "lebron james", "formula 1"]
+        names = ["carbon fibers"]
         first_pages, total_num_drawn = draw_list_of_page_names(names, u, False)
         '''num_of_pages_to_connect = int(input("how many pages? "))
         first_pages = []

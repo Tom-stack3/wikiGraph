@@ -87,7 +87,6 @@ class WikiPage:
         False - not a valid link to click on.
         """
         url = str(link['href'])
-        print(type(link))
         # if it doesn't lead to a wiki page
         if not url.startswith("/wiki/"):
             return False
