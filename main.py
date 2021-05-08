@@ -247,7 +247,7 @@ def main():
     output_file_formats = ["svg", "pdf", "jpg"]
     '''
     output_file_formats = ["svg", "pdf"]
-    num_of_pages = [1, 2, 50, 100, 75, 25, 20, 15, 25]
+    num_of_pages = [5,5,5,5,5,5, 7, 10, 8, 5, 5, 8, 10, 8, 15, 15]
     for i in num_of_pages:
         if i < 1:
             continue
@@ -263,7 +263,9 @@ def main():
         print(len(names), names)
         first_pages, total_num_drawn = draw_list_of_page_names(names, u, False)
         '''
-        first_pages, total_num_drawn = draw_random_pages(u, i, DEBUG)
+        #first_pages, total_num_drawn = draw_random_pages(u, i, DEBUG)
+        names = ["russia","Space","coronavirus","real madrid","Art","lebron james","formula 1"]
+        first_pages, total_num_drawn = draw_list_of_page_names(names, u, False)
         '''num_of_pages_to_connect = int(input("how many pages? "))
         first_pages = []
         for _ in range(num_of_pages_to_connect):
@@ -274,7 +276,7 @@ def main():
         time_in_minutes = "{:.2f}".format((time.time() - start_time) / 60)
         print("run ended after:", time_in_minutes, "minutes")
         print("ran on ", len(first_pages), "names")
-        u.attr(label=create_label_for_output_file(first_pages, time_in_minutes, total_num_drawn))
+        u.attr(label=create_label_for_output_file(first_pages, time_in_minutes, total_num_drawn), fontsize="20")
 
         for output_format in output_file_formats:
             u.format = output_format
