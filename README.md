@@ -71,12 +71,16 @@ interesting loops of Wikipedia articles I found:
   ➜ [Carbon fibers](https://en.wikipedia.org/wiki/Carbon_fibers) again :)\
   <small>notice that the first two links in [fibers](https://en.wikipedia.org/wiki/Fiber) are local links, leading to a
   section in the article, so we ignore and skip them:
-  ... "*is a <a href="#Natural_fibers">natural</a> or <a href="#Man-made_fibers">man-made</a> substance*"
+  ... "*is a <b><a href="#Natural_fibers">natural</a></b> or <b><a href="#Man-made_fibers">man-made</a></b> substance*"
   ...</small>
 
-<img src="./output_examples/loops_examples/logic.svg">
-<img src="./output_examples/loops_examples/usa.svg">
-<img src="./output_examples/loops_examples/carbon_fibers.svg">
+<table style="width:20%">
+  <tr>
+    <th><img src="./output_examples/loops_examples/logic.svg"></th>
+    <th><img src="./output_examples/loops_examples/usa.svg"></th> 
+    <th><img src="./output_examples/loops_examples/carbon_fibers.svg"></th>
+  </tr>
+ </table>
 
 
 ## Examples:
