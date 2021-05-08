@@ -21,7 +21,7 @@ u.format = 'svg'
 u.edge('Nicholas I', 'Alexander II', label="\E")
 u.edge('Nicholas I', 'Grand Duke Michael')
 u.edge('Nicholas I', 'Maria, Duchess of Leuchtenberg')
-u.edge('Nicholas"˸" a I', 'Olga, Queen of Württemberg')
+u.edge('Nicholas I', 'Olga, Queen of Württemberg')
 u.edge('Alexander II', 'Grand Duchess Alexandra')
 u.edge('Alexander II', 'Tsarevich Nicholas')
 u.edge('Alexander II', 'Alexander III')
@@ -50,4 +50,10 @@ u.view()
 # we change the output format to .pdf
 u.format = 'pdf'
 # we save the file in a .pdf file and view it.
-# u.view()
+u.view()
+
+u.format = 'jpg'
+u.view()
+
+u.format = 'png'
+u.view()

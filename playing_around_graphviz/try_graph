@@ -4,7 +4,7 @@ strict digraph unix_try {
 	"Nicholas I" -> "Alexander II" [label="\E"]
 	"Nicholas I" -> "Grand Duke Michael"
 	"Nicholas I" -> "Maria, Duchess of Leuchtenberg"
-	"Nicholas\"˸\" a I" -> "Olga, Queen of Württemberg"
+	"Nicholas I" -> "Olga, Queen of Württemberg"
 	"Alexander II" -> "Grand Duchess Alexandra"
 	"Alexander II" -> "Tsarevich Nicholas"
 	"Alexander II" -> "Alexander III"
@@ -18,5 +18,5 @@ strict digraph unix_try {
 	"Nicholas II" -> "Tsesarevich Alexei"
 	"Grand Duke Michael" [fontname="times-bold" textitem="i like your"]
 	"Nicholas I" [label="Nicholas I of Russia" URL="https://en.wikipedia.org/wiki/Nicholas_I_of_Russia" fontname="Courier-BoldOblique"]
-	fontsize=20 label="\lGraph generated on 08/05/2021 17:58:47.\lChecked 100 pages. Time took: 69 minutes." text="i like your" textitem="yes i am a text"
+	fontsize=20 label="\lGraph generated on 08/05/2021 22:45:13.\lChecked 100 pages. Time took: 69 minutes." text="i like your" textitem="yes i am a text"
 }
