@@ -63,16 +63,21 @@ interesting loops of Wikipedia articles I found:
 
 - [Logic](https://en.wikipedia.org/wiki/Logic) ➜ [rules of inference](https://en.wikipedia.org/wiki/Rule_of_inference)
   ➜ [Logical form](https://en.wikipedia.org/wiki/Logical_form) ➜ [Logic](https://en.wikipedia.org/wiki/Logic) again :)
-- [Contiguous United States](https://en.wikipedia.org/wiki/Contiguous_United_States)
+- [United States](https://en.wikipedia.org/wiki/United_States)
+  ➜ [Contiguous United States](https://en.wikipedia.org/wiki/Contiguous_United_States)
   ➜ [U.S. states](https://en.wikipedia.org/wiki/U.S._state)
-  ➜ [United States](https://en.wikipedia.org/wiki/United_States)
-  ➜ [Contiguous United States](https://en.wikipedia.org/wiki/Contiguous_United_States) again :)
+  ➜ [United States](https://en.wikipedia.org/wiki/United_States)  again :)
 - [Carbon fibers](https://en.wikipedia.org/wiki/Carbon_fibers) ➜ [fibers](https://en.wikipedia.org/wiki/Fiber)
   ➜ [Carbon fibers](https://en.wikipedia.org/wiki/Carbon_fibers) again :)\
   <small>notice that the first two links in [fibers](https://en.wikipedia.org/wiki/Fiber) are local links, leading to a
   section in the article, so we ignore and skip them:
   ... "*is a <a href="#Natural_fibers">natural</a> or <a href="#Man-made_fibers">man-made</a> substance*"
   ...</small>
+
+<img src="./output_examples/loops_examples/logic.svg">
+<img src="./output_examples/loops_examples/usa.svg">
+<img src="./output_examples/loops_examples/carbon_fibers.svg">
+
 
 ## Examples:
 
