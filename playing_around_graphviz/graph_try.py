@@ -31,7 +31,7 @@ u.edge('Alexander III', 'Grand Duke George')
 u.edge('Nicholas II', 'Grand Duchess Olga')
 u.edge('Nicholas II', 'Grand Duchess Tatiana')
 u.edge('Nicholas II', 'Grand Duchess Maria')
-u.edge('Nicholas II', 'Grand Duchess Anastasia', headlabel="head label", label="label", taillabel="tail label")
+u.edge('Nicholas II', 'Grand Duchess Anastasia', headlabel="head label_", label="label", taillabel="tail label")
 u.edge('Nicholas II', 'Tsesarevich Alexei')
 
 u.node("Grand Duke Michael", fontname="times-bold", textitem="i like your")

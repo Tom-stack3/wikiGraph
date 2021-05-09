@@ -133,7 +133,7 @@ class WikiPage:
         # 'thumbcaption' - a Photo Caption
         # 'hlist' - a list like in: https://en.wikipedia.org/wiki/January
         wikipedia_classes_to_ignore = ["thumbcaption", "infobox", "navigation-not-searchable", "sidebar", "box-text",
-                                       "toc", "mw-editsection", "thumb", "hlist"]
+                                       "toc", "mw-editsection", "thumb", "hlist", "navbox"]
 
         for p_class in parents_classes:
 

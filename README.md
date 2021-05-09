@@ -11,10 +11,10 @@ I created a python script which "plays" this "game" and generates a nice Graph s
 first link in a Wikipedia article.\
 For example the following graph, which ran on these first pages:\
 "Russia", "Space", "Coronavirus", "Art", "LeBron James","Real Madrid" and "Formula One".\
-(to view raw: [0.svg](https://raw.githubusercontent.com/Tom-stack3/wikiGraph/master/output_examples/0.svg)
-, [0.pdf](https://raw.githubusercontent.com/Tom-stack3/wikiGraph/master/output_examples/0.pdf))
+(to view raw: [7_0.svg](https://raw.githubusercontent.com/Tom-stack3/wikiGraph/master/output_examples/7_0.svg)
+, [7_0.pdf](https://raw.githubusercontent.com/Tom-stack3/wikiGraph/master/output_examples/7_0.pdf))
 
-<img src="./output_examples/0.svg" height="950">
+<img src="./output_examples/7_0.svg" height="950">
 
 ## How we decide what to click on?
 
