@@ -16,6 +16,18 @@ For example the following graph, which ran on these first pages:\
 
 <img src="./output_examples/7_0.svg" height="950">
 
+## Installations
+
+1. [bs4](https://pypi.org/project/beautifulsoup4/) ```pip install beautifulsoup4```
+2. [wikipedia](https://pypi.org/project/wikipedia/) ```pip install wikipedia```
+3. [Graphviz](https://pypi.org/project/graphviz/)
+    1. ```pip install graphviz```
+    2. Install Graphviz from here: https://www.graphviz.org/download/ and **make sure** that the directory containing the
+       dot executable is on your **systems’ path** !!\
+       VERY IMPORTANT STEP
+       
+
+
 ## How we decide what to click on?
 
 Following the chain consists of:
@@ -40,7 +52,7 @@ You can go take a look on the checks it does, but in general we check the follow
     2. smaller text (```<small>```)
     3. supper text (```<sup>```)
 
-4. It is not a link to a disambiguation page - <i>([disambiguation](https://en.wikipedia.org/wiki/Category:Disambiguation_pages))</i>.
+4. It is not a link to a disambiguation page <i>( [disambiguation](https://en.wikipedia.org/wiki/Category:Disambiguation_pages) )</i>.
 
 ## How the graph is generated?
 
@@ -58,8 +70,9 @@ they represent.
 
 ## Loops found 😯
 
-Of course the "[Getting to Philosophy](https://en.wikipedia.org/wiki/Wikipedia:Getting_to_Philosophy)" phenomenon doesn't happen in 100% percent of the cases, and they are some loopholes in it. Some
-interesting loops of Wikipedia articles I found:
+Of course the "[Getting to Philosophy](https://en.wikipedia.org/wiki/Wikipedia:Getting_to_Philosophy)" phenomenon
+doesn't happen in 100% percent of the cases, and they are some loopholes in it. Some interesting loops of Wikipedia
+articles I found:
 
 - [Logic](https://en.wikipedia.org/wiki/Logic) ➜ [rules of inference](https://en.wikipedia.org/wiki/Rule_of_inference)
   ➜ [Logical form](https://en.wikipedia.org/wiki/Logical_form) ➜ [Logic](https://en.wikipedia.org/wiki/Logic) again :)
@@ -83,11 +96,12 @@ interesting loops of Wikipedia articles I found:
  </table>
 
 ## So.. what does Philosophy lead to?
+
 As surprising as it sounds, Philosophy also leads to Philosophy 🥳🥳\
 You can see its path here: [philosophy path](./output_examples/loops_examples/philosophy.svg)\
-(to view raw: [philosophy.svg](https://raw.githubusercontent.com/Tom-stack3/wikiGraph/master/output_examples/loops_examples/philosophy.svg)
+(to view
+raw: [philosophy.svg](https://raw.githubusercontent.com/Tom-stack3/wikiGraph/master/output_examples/loops_examples/philosophy.svg)
 , [philosophy.pdf](https://raw.githubusercontent.com/Tom-stack3/wikiGraph/master/output_examples/loops_examples/philosophy.pdf))
-
 
 ## Examples:
 

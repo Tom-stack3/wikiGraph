@@ -13,8 +13,6 @@ import time
 # for the output label
 from datetime import datetime
 
-# for getting random words
-from random_word import RandomWords
 
 # separator for printing
 SEP = "---------------------------"
@@ -255,7 +253,7 @@ def main():
     '''
     output_file_formats = ["svg", "pdf"]
 
-    num_of_pages = [7, 10, 8, 12, 10, 8, 13, 15, 15, 20, 20, 7, 10, 8, 5, 6, 8, 10, 8]
+    num_of_pages = [50, 60, 70]
     for i in num_of_pages:
         if i < 1:
             continue
@@ -264,23 +262,27 @@ def main():
                     node_attr={'color': REGULAR_PAGES_COLOR, 'style': 'filled'}, )
         u.attr(size='50,50')
         start_time = time.time()
+
+        # if you want to draw i random articles.
+        first_pages, total_num_drawn = draw_random_pages(u, i, DEBUG)
+
+        # if you want to draw these articles (there is a auto-completion search)
         '''
-        r = RandomWords()
-        names = r.get_random_words(hasDictionaryDef="true", minLength=4, maxLength=13, sortBy="alpha",
-                                   sortOrder="asc", limit=i)
-        print(len(names), names)
-        first_pages, total_num_drawn = draw_list_of_page_names(names, u, False)
-        '''
-        #first_pages, total_num_drawn = draw_random_pages(u, i, DEBUG)
         names = ["russia", "Space", "coronavirus", "real madrid", "Art", "lebron james", "formula 1"]
-        names = ["Yemeni Revolution"]
-        first_pages, total_num_drawn = draw_list_of_page_names(names, u, False)
-        '''num_of_pages_to_connect = int(input("how many pages? "))
+        first_pages, total_num_drawn = draw_list_of_page_names(names, u, DEBUG)
+        '''
+
+        # if you want to choose each page manually in the drawing
+        '''
+        pages_drawn = []
+        num_of_pages_to_connect = int(input("how many pages? "))
         first_pages = []
         for _ in range(num_of_pages_to_connect):
             first_page = WikiPage.choose_first_page_manually()
-            draw_page_path(first_page, u)
-            first_pages.append(first_page.name)'''
+            pages_drawn.append(draw_page_path(first_page, u, pages_drawn, DEBUG))
+            first_pages.append(first_page.name)
+        total_num_drawn = len(pages_drawn)
+        '''
 
         time_in_minutes = "{:.2f}".format((time.time() - start_time) / 60)
         print("run ended after:", time_in_minutes, "minutes")

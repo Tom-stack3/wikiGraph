@@ -1,163 +1,26 @@
 strict digraph unix {
 	node [color=lightskyblue style=filled]
 	size="50,50"
-	"Manca Marcelan" [URL="https://en.wikipedia.org/wiki/Manca_Marcelan" color=lightskyblue1]
-	"Adamasingba Stadium" [URL="https://en.wikipedia.org/wiki/Adamasingba_Stadium" color=lightskyblue1]
-	"Adamasingba Stadium" -> Stadium
-	Stadium [URL="https://en.wikipedia.org/wiki/Stadium"]
-	Stadium -> "Pausanias of Athens"
-	"Pausanias of Athens" [URL="https://en.wikipedia.org/wiki/Pausanias_of_Athens"]
-	"Pausanias of Athens" -> "Classical Athens"
-	"Classical Athens" [URL="https://en.wikipedia.org/wiki/Classical_Athens"]
-	"Classical Athens" -> "Classical Greece"
-	"Classical Greece" [URL="https://en.wikipedia.org/wiki/Classical_Greece"]
-	"Classical Greece" -> Greece
-	Greece [URL="https://en.wikipedia.org/wiki/Greece"]
-	Greece -> "Southeast Europe"
-	"Southeast Europe" [URL="https://en.wikipedia.org/wiki/Southeast_Europe"]
-	"Southeast Europe" -> Geography
-	Geography [URL="https://en.wikipedia.org/wiki/Geography"]
-	Geography -> Science
-	Science [URL="https://en.wikipedia.org/wiki/Science"]
-	Science -> "Scientific method"
-	"Scientific method" [URL="https://en.wikipedia.org/wiki/Scientific_method"]
-	"Scientific method" -> "Empirical evidence"
-	"Empirical evidence" [URL="https://en.wikipedia.org/wiki/Empirical_evidence"]
-	"Empirical evidence" -> Information
-	Information [URL="https://en.wikipedia.org/wiki/Information"]
-	Information -> Uncertainty
-	Uncertainty [URL="https://en.wikipedia.org/wiki/Uncertainty"]
-	Uncertainty -> Epistemology
-	Epistemology [URL="https://en.wikipedia.org/wiki/Epistemology"]
-	Epistemology -> "Outline of philosophy"
-	"Outline of philosophy" [URL="https://en.wikipedia.org/wiki/Outline_of_philosophy"]
-	"Outline of philosophy" -> Philosophy
+	"Lionel Messi" [URL="https://en.wikipedia.org/wiki/Lionel_Messi" color=lightskyblue1]
+	"Lionel Messi" -> "Association football"
+	"Association football" [URL="https://en.wikipedia.org/wiki/Association_football"]
+	"Association football" -> "Team sport"
+	"Team sport" [URL="https://en.wikipedia.org/wiki/Team_sport"]
+	"Team sport" -> Sport
+	Sport [URL="https://en.wikipedia.org/wiki/Sport"]
+	Sport -> Competition
+	Competition [URL="https://en.wikipedia.org/wiki/Competition"]
+	Competition -> Goal
+	Goal [URL="https://en.wikipedia.org/wiki/Goal"]
+	Goal -> Idea
+	Idea [URL="https://en.wikipedia.org/wiki/Idea"]
+	Idea -> Philosophy
 	Philosophy [URL="https://en.wikipedia.org/wiki/Philosophy"]
-	"Mudhol State" [URL="https://en.wikipedia.org/wiki/Mudhol_State" color=lightskyblue1]
-	"Mudhol State" -> "Princely state"
-	"Princely state" [URL="https://en.wikipedia.org/wiki/Princely_state"]
-	"Princely state" -> "Vassal state"
-	"Vassal state" [URL="https://en.wikipedia.org/wiki/Vassal_state"]
-	"Vassal state" -> "State (polity)"
-	"State (polity)" [URL="https://en.wikipedia.org/wiki/State_(polity)"]
-	"State (polity)" -> Polity
-	Polity [URL="https://en.wikipedia.org/wiki/Polity"]
-	Polity -> "Collective identity"
-	"Collective identity" [URL="https://en.wikipedia.org/wiki/Collective_identity"]
-	"Collective identity" -> Belongingness
-	Belongingness [URL="https://en.wikipedia.org/wiki/Belongingness"]
-	Belongingness -> Emotional
-	Emotional [URL="https://en.wikipedia.org/wiki/Emotional"]
-	Emotional -> Pleasure
-	Pleasure [URL="https://en.wikipedia.org/wiki/Pleasure"]
-	Pleasure -> "Ecstasy (emotion)"
-	"Ecstasy (emotion)" [URL="https://en.wikipedia.org/wiki/Ecstasy_(emotion)"]
-	"Ecstasy (emotion)" -> "Altered state of consciousness"
-	"Altered state of consciousness" [URL="https://en.wikipedia.org/wiki/Altered_state_of_consciousness"]
-	"Altered state of consciousness" -> Hypnosis
-	Hypnosis [URL="https://en.wikipedia.org/wiki/Hypnosis"]
-	Hypnosis -> Attention
-	Attention [URL="https://en.wikipedia.org/wiki/Attention"]
-	Attention -> Cognition
-	Cognition [URL="https://en.wikipedia.org/wiki/Cognition"]
-	Cognition -> "Intellectual function"
-	"Intellectual function" [URL="https://en.wikipedia.org/wiki/Intellectual_function"]
-	"Intellectual function" -> Reason
-	Reason [URL="https://en.wikipedia.org/wiki/Reason"]
-	Reason -> Consciousness
-	Consciousness [URL="https://en.wikipedia.org/wiki/Consciousness"]
-	Consciousness -> Sentience
-	Sentience [URL="https://en.wikipedia.org/wiki/Sentience"]
-	Sentience -> Feeling
-	Feeling [URL="https://en.wikipedia.org/wiki/Feeling"]
-	Feeling -> Touch
-	Touch [URL="https://en.wikipedia.org/wiki/Touch"]
-	Touch -> "Sensory nervous system"
-	"Sensory nervous system" [URL="https://en.wikipedia.org/wiki/Sensory_nervous_system"]
-	"Sensory nervous system" -> "Nervous system"
-	"Nervous system" [URL="https://en.wikipedia.org/wiki/Nervous_system"]
-	"Nervous system" -> Biology
-	Biology [URL="https://en.wikipedia.org/wiki/Biology"]
-	Biology -> "Natural science"
-	"Natural science" [URL="https://en.wikipedia.org/wiki/Natural_science"]
-	"Natural science" -> "Branches of science"
-	"Branches of science" [URL="https://en.wikipedia.org/wiki/Branches_of_science"]
-	"Branches of science" -> Science
-	Science [URL="https://en.wikipedia.org/wiki/Science"]
-	Science -> "Scientific method"
-	"Uno y medio contra el mundo" [URL="https://en.wikipedia.org/wiki/Uno_y_medio_contra_el_mundo" color=lightskyblue1]
-	"Uno y medio contra el mundo" -> "José Estrada (director)"
-	"José Estrada (director)" [URL="https://en.wikipedia.org/wiki/Jos%C3%A9_Estrada_(director)"]
-	"José Estrada (director)" -> "Film director"
-	"Film director" [URL="https://en.wikipedia.org/wiki/Film_director"]
-	"Film director" -> Film
-	Film [URL="https://en.wikipedia.org/wiki/Film"]
-	Film -> "Visual art"
-	"Visual art" [URL="https://en.wikipedia.org/wiki/Visual_art"]
-	"Visual art" -> Painting
-	Painting [URL="https://en.wikipedia.org/wiki/Painting"]
-	Painting -> Paint
-	Paint [URL="https://en.wikipedia.org/wiki/Paint"]
-	Paint -> Liquid
-	Liquid [URL="https://en.wikipedia.org/wiki/Liquid"]
-	Liquid -> Compressibility
-	Compressibility [URL="https://en.wikipedia.org/wiki/Compressibility"]
-	Compressibility -> Thermodynamics
-	Thermodynamics [URL="https://en.wikipedia.org/wiki/Thermodynamics"]
-	Thermodynamics -> Physics
-	Physics [URL="https://en.wikipedia.org/wiki/Physics"]
-	Physics -> "Natural science"
-	"Natural science" [URL="https://en.wikipedia.org/wiki/Natural_science"]
-	"Natural science" -> "Branches of science"
-	Hosle [URL="https://en.wikipedia.org/wiki/Hosle" color=lightskyblue1]
-	Hosle -> "Bærum"
-	"Bærum" [URL="https://en.wikipedia.org/wiki/B%C3%A6rum"]
-	"Bærum" -> "List of municipalities of Norway"
-	"List of municipalities of Norway" [URL="https://en.wikipedia.org/wiki/List_of_municipalities_of_Norway"]
-	"List of municipalities of Norway" -> Norway
-	Norway [URL="https://en.wikipedia.org/wiki/Norway"]
-	Norway -> "Nordic countries"
-	"Nordic countries" [URL="https://en.wikipedia.org/wiki/Nordic_countries"]
-	"Nordic countries" -> Region
-	Region [URL="https://en.wikipedia.org/wiki/Region"]
-	Region -> Geography
-	Geography [URL="https://en.wikipedia.org/wiki/Geography"]
-	Geography -> Science
-	"Robin Schouten" [URL="https://en.wikipedia.org/wiki/Robin_Schouten" color=lightskyblue1]
-	"Robin Schouten" -> Netherlands
-	Netherlands [URL="https://en.wikipedia.org/wiki/Netherlands"]
-	Netherlands -> Holland
-	Holland [URL="https://en.wikipedia.org/wiki/Holland"]
-	Holland -> Region
-	Region [URL="https://en.wikipedia.org/wiki/Region"]
-	Region -> Geography
-	"On the Run Tour˸ Beyoncé and Jay-Z (TV program)" [URL="https://en.wikipedia.org/wiki/On_the_Run_Tour:_Beyonc%C3%A9_and_Jay-Z_(TV_program)" color=lightskyblue1]
-	"On the Run Tour˸ Beyoncé and Jay-Z (TV program)" -> "On the Run Tour (Beyoncé and Jay-Z)"
-	"On the Run Tour (Beyoncé and Jay-Z)" [URL="https://en.wikipedia.org/wiki/On_the_Run_Tour_(Beyonc%C3%A9_and_Jay-Z)"]
-	"On the Run Tour (Beyoncé and Jay-Z)" -> "Concert tour"
-	"Concert tour" [URL="https://en.wikipedia.org/wiki/Concert_tour"]
-	"Concert tour" -> Concert
-	Concert [URL="https://en.wikipedia.org/wiki/Concert"]
-	Concert -> Music
-	Music [URL="https://en.wikipedia.org/wiki/Music"]
-	Music -> "The arts"
-	"The arts" [URL="https://en.wikipedia.org/wiki/The_arts"]
-	"The arts" -> Creativity
-	Creativity [URL="https://en.wikipedia.org/wiki/Creativity"]
-	Creativity -> Psychology
-	Psychology [URL="https://en.wikipedia.org/wiki/Psychology"]
-	Psychology -> Science
-	Science [URL="https://en.wikipedia.org/wiki/Science"]
-	Science -> "Scientific method"
-	"New Sounds by Pete Rugolo" [URL="https://en.wikipedia.org/wiki/New_Sounds_by_Pete_Rugolo" color=lightskyblue1]
-	"New Sounds by Pete Rugolo" -> "Pete Rugolo"
-	"Pete Rugolo" [URL="https://en.wikipedia.org/wiki/Pete_Rugolo"]
-	"Pete Rugolo" -> Jazz
-	Jazz [URL="https://en.wikipedia.org/wiki/Jazz"]
-	Jazz -> "Music genre"
-	"Music genre" [URL="https://en.wikipedia.org/wiki/Music_genre"]
-	"Music genre" -> Music
-	Music [URL="https://en.wikipedia.org/wiki/Music"]
-	Music -> "The arts"
-	fontsize=20 label="\lGraph generated on 09/05/2021 15:04:17.\lChecked 8 pages. Time took: 1.44 minutes.\lNumber of pages drawn: 86"
+	"Cleveland Browns" [URL="https://en.wikipedia.org/wiki/Cleveland_Browns" color=lightskyblue1]
+	"Cleveland Browns" -> "American football"
+	"American football" [URL="https://en.wikipedia.org/wiki/American_football"]
+	"American football" -> "Team sport"
+	"Team sport" [URL="https://en.wikipedia.org/wiki/Team_sport"]
+	"Team sport" -> Sport
+	fontsize=20 label="\lGraph generated on 09/05/2021 20:31:16.\lChecked 2 pages. Time took: 0.81 minutes.\lNumber of pages drawn: 14"
 }
