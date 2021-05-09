@@ -83,9 +83,8 @@ interesting loops of Wikipedia articles I found:
  </table>
 
 ## So.. what does Philosophy lead to?
-As surprising as it sounds, Philosophy also leads to Philosophy 🥳🥳
-You can see its path here:\
-[philosophy path](./output_examples/loops_examples/philosophy.svg)\
+As surprising as it sounds, Philosophy also leads to Philosophy 🥳🥳\
+You can see its path here: [philosophy path](./output_examples/loops_examples/philosophy.svg)\
 (to view raw: [philosophy.svg](https://raw.githubusercontent.com/Tom-stack3/wikiGraph/master/output_examples/loops_examples/philosophy.svg)
 , [philosophy.pdf](https://raw.githubusercontent.com/Tom-stack3/wikiGraph/master/output_examples/loops_examples/philosophy.pdf))
 
