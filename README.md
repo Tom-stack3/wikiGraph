@@ -40,7 +40,7 @@ You can go take a look on the checks it does, but in general we check the follow
     2. smaller text (```<small>```)
     3. supper text (```<sup>```)
 
-4. It is not a link to a disambiguation page.
+4. It is not a link to a disambiguation page - <i>([disambiguation](https://en.wikipedia.org/wiki/Category:Disambiguation_pages))</i>.
 
 ## How the graph is generated?
 
@@ -83,9 +83,8 @@ interesting loops of Wikipedia articles I found:
  </table>
 
 ## So.. what does Philosophy lead to?
-As surprising as it sounds, Philosophy also leads to Philosophy 🥳🥳
-You can see its path here:\
-[philosophy path](./output_examples/loops_examples/philosophy.svg)\
+As surprising as it sounds, Philosophy also leads to Philosophy 🥳🥳\
+You can see its path here: [philosophy path](./output_examples/loops_examples/philosophy.svg)\
 (to view raw: [philosophy.svg](https://raw.githubusercontent.com/Tom-stack3/wikiGraph/master/output_examples/loops_examples/philosophy.svg)
 , [philosophy.pdf](https://raw.githubusercontent.com/Tom-stack3/wikiGraph/master/output_examples/loops_examples/philosophy.pdf))
 
