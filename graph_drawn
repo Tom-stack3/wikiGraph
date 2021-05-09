@@ -1,11 +1,41 @@
 strict digraph unix {
 	node [color=lightskyblue style=filled]
 	size="50,50"
-	"United States" [URL="https://en.wikipedia.org/wiki/United_States" color=lightskyblue1]
-	"United States" -> "Continental United States"
-	"Continental United States" [URL="https://en.wikipedia.org/wiki/Continental_United_States"]
-	"Continental United States" -> "U.S. state"
-	"U.S. state" [URL="https://en.wikipedia.org/wiki/U.S._state"]
-	"U.S. state" -> "United States"
-	"United States" [URL="https://en.wikipedia.org/wiki/United_States"]
+	Philosophy [URL="https://en.wikipedia.org/wiki/Philosophy" color=lightskyblue1]
+	Philosophy -> Reason
+	Reason [URL="https://en.wikipedia.org/wiki/Reason"]
+	Reason -> Consciousness
+	Consciousness [URL="https://en.wikipedia.org/wiki/Consciousness"]
+	Consciousness -> Sentience
+	Sentience [URL="https://en.wikipedia.org/wiki/Sentience"]
+	Sentience -> Feeling
+	Feeling [URL="https://en.wikipedia.org/wiki/Feeling"]
+	Feeling -> Touch
+	Touch [URL="https://en.wikipedia.org/wiki/Touch"]
+	Touch -> "Sensory nervous system"
+	"Sensory nervous system" [URL="https://en.wikipedia.org/wiki/Sensory_nervous_system"]
+	"Sensory nervous system" -> "Nervous system"
+	"Nervous system" [URL="https://en.wikipedia.org/wiki/Nervous_system"]
+	"Nervous system" -> Biology
+	Biology [URL="https://en.wikipedia.org/wiki/Biology"]
+	Biology -> "Natural science"
+	"Natural science" [URL="https://en.wikipedia.org/wiki/Natural_science"]
+	"Natural science" -> "Branches of science"
+	"Branches of science" [URL="https://en.wikipedia.org/wiki/Branches_of_science"]
+	"Branches of science" -> Science
+	Science [URL="https://en.wikipedia.org/wiki/Science"]
+	Science -> "Scientific method"
+	"Scientific method" [URL="https://en.wikipedia.org/wiki/Scientific_method"]
+	"Scientific method" -> "Empirical evidence"
+	"Empirical evidence" [URL="https://en.wikipedia.org/wiki/Empirical_evidence"]
+	"Empirical evidence" -> Information
+	Information [URL="https://en.wikipedia.org/wiki/Information"]
+	Information -> Uncertainty
+	Uncertainty [URL="https://en.wikipedia.org/wiki/Uncertainty"]
+	Uncertainty -> Epistemology
+	Epistemology [URL="https://en.wikipedia.org/wiki/Epistemology"]
+	Epistemology -> "Outline of philosophy"
+	"Outline of philosophy" [URL="https://en.wikipedia.org/wiki/Outline_of_philosophy"]
+	"Outline of philosophy" -> Philosophy
+	Philosophy [URL="https://en.wikipedia.org/wiki/Philosophy"]
 }

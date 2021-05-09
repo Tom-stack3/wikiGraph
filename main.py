@@ -122,6 +122,10 @@ def create_corresponding_copy(const_filename, first_pages, file_format):
     """
     new_file_name = str(len(first_pages)) + " " + "+".join(first_pages[:3]) + "." + file_format
 
+    forbidden_file_name_chars = '\*?:/"<>|'
+    for c in forbidden_file_name_chars:
+        new_file_name = new_file_name.replace(c,'')
+
     # get the current working dir
     src_dir = os.getcwd()
 
@@ -270,7 +274,7 @@ def main():
         '''
         # first_pages, total_num_drawn = draw_random_pages(u, i, DEBUG)
         names = ["russia", "Space", "coronavirus", "real madrid", "Art", "lebron james", "formula 1"]
-        names = ["United States"]
+        names = ["Philosophy"]
         first_pages, total_num_drawn = draw_list_of_page_names(names, u, False)
         '''num_of_pages_to_connect = int(input("how many pages? "))
         first_pages = []
