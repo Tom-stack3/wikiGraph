@@ -40,7 +40,7 @@ You can go take a look on the checks it does, but in general we check the follow
     2. smaller text (```<small>```)
     3. supper text (```<sup>```)
 
-4. It is not a link to a disambiguation page.
+4. It is not a link to a disambiguation page - <i>([disambiguation]())</i>.
 
 ## How the graph is generated?
 
