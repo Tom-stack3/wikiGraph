@@ -1,26 +1,45 @@
 strict digraph unix {
 	node [color=lightskyblue style=filled]
 	size="50,50"
-	"Lionel Messi" [URL="https://en.wikipedia.org/wiki/Lionel_Messi" color=lightskyblue1]
-	"Lionel Messi" -> "Association football"
-	"Association football" [URL="https://en.wikipedia.org/wiki/Association_football"]
+	"Battle of Salher" [URL="https://en.wikipedia.org/wiki/Battle_of_Salher" color=lightskyblue1 fontsize=12]
+	"Battle of Salher" -> "Maratha Empire"
+	"Maratha Empire" [URL="https://en.wikipedia.org/wiki/Maratha_Empire" fontsize=12]
+	"Maratha Empire" -> "Indian subcontinent"
+	"Indian subcontinent" [URL="https://en.wikipedia.org/wiki/Indian_subcontinent" fontsize=12]
+	"Indian subcontinent" -> "Physical geography"
+	"Physical geography" [URL="https://en.wikipedia.org/wiki/Physical_geography" fontsize=12]
+	"Physical geography" -> Geography
+	Geography [URL="https://en.wikipedia.org/wiki/Geography" fontsize=12]
+	Geography -> Science
+	Science [URL="https://en.wikipedia.org/wiki/Science" fontsize=12]
+	Science -> "Scientific method"
+	"Scientific method" [URL="https://en.wikipedia.org/wiki/Scientific_method" fontsize=12]
+	"Scientific method" -> "Empirical evidence"
+	"Empirical evidence" [URL="https://en.wikipedia.org/wiki/Empirical_evidence" fontsize=12]
+	"Empirical evidence" -> Information
+	Information [URL="https://en.wikipedia.org/wiki/Information" fontsize=12]
+	Information -> Uncertainty
+	Uncertainty [URL="https://en.wikipedia.org/wiki/Uncertainty" fontsize=12]
+	Uncertainty -> Epistemology
+	Epistemology [URL="https://en.wikipedia.org/wiki/Epistemology" fontsize=12]
+	Epistemology -> "Outline of philosophy"
+	"Outline of philosophy" [URL="https://en.wikipedia.org/wiki/Outline_of_philosophy" fontsize=12]
+	"Outline of philosophy" -> Philosophy
+	Philosophy [URL="https://en.wikipedia.org/wiki/Philosophy" fontsize=12]
+	"Sahawit Khumpiam" [URL="https://en.wikipedia.org/wiki/Sahawit_Khumpiam" color=lightskyblue1 fontsize=12]
+	"Sahawit Khumpiam" -> "Association football"
+	"Association football" [URL="https://en.wikipedia.org/wiki/Association_football" fontsize=12]
 	"Association football" -> "Team sport"
-	"Team sport" [URL="https://en.wikipedia.org/wiki/Team_sport"]
+	"Team sport" [URL="https://en.wikipedia.org/wiki/Team_sport" fontsize=12]
 	"Team sport" -> Sport
-	Sport [URL="https://en.wikipedia.org/wiki/Sport"]
+	Sport [URL="https://en.wikipedia.org/wiki/Sport" fontsize=12]
 	Sport -> Competition
-	Competition [URL="https://en.wikipedia.org/wiki/Competition"]
+	Competition [URL="https://en.wikipedia.org/wiki/Competition" fontsize=12]
 	Competition -> Goal
-	Goal [URL="https://en.wikipedia.org/wiki/Goal"]
+	Goal [URL="https://en.wikipedia.org/wiki/Goal" fontsize=12]
 	Goal -> Idea
-	Idea [URL="https://en.wikipedia.org/wiki/Idea"]
+	Idea [URL="https://en.wikipedia.org/wiki/Idea" fontsize=12]
 	Idea -> Philosophy
-	Philosophy [URL="https://en.wikipedia.org/wiki/Philosophy"]
-	"Cleveland Browns" [URL="https://en.wikipedia.org/wiki/Cleveland_Browns" color=lightskyblue1]
-	"Cleveland Browns" -> "American football"
-	"American football" [URL="https://en.wikipedia.org/wiki/American_football"]
-	"American football" -> "Team sport"
-	"Team sport" [URL="https://en.wikipedia.org/wiki/Team_sport"]
-	"Team sport" -> Sport
-	fontsize=20 label="\lGraph generated on 09/05/2021 20:31:16.\lChecked 2 pages. Time took: 0.81 minutes.\lNumber of pages drawn: 14"
+	Philosophy [URL="https://en.wikipedia.org/wiki/Philosophy" fontsize=12]
+	fontsize=16 label="\lGraph generated on 10/05/2021 17:17:31.\lChecked 2 pages. Time took: 0.34 minutes.\lNumber of pages drawn: 21"
 }

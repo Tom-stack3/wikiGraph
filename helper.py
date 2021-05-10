@@ -7,15 +7,20 @@ from graphviz import Digraph
 # for saving the file the right way
 import os
 import shutil
-
+# to measure time
 import time
 
 # for the output label
 from datetime import datetime
 
-
 # separator for printing
 SEP = "---------------------------"
+
+# font sizes
+# -----------------
+# the default is 14
+NODE_FONT_SIZE = '12'
+LABEL_FONT_SIZE = '16'
 
 # we color the first pages a bit differently from the other pages.
 # Nodes Color documentation: https://graphviz.org/doc/info/colors.html
@@ -24,6 +29,9 @@ REGULAR_PAGES_COLOR = "lightskyblue"
 
 # True - if you want to debug or get information about the program while it's running.
 DEBUG = False
+
+# Work file name. no need to change :)
+WORK_FILE_NAME = "graph_drawn"
 
 
 def autocomplete_search(name_searched):
@@ -78,7 +86,7 @@ def draw_page_path(page, u, pages_drawn, debug=False):
     road_of_page = [page.name]
     count_pages = 0
     # we add the first page node
-    u.node(page.name_to_show, URL=page.url, color=FIRST_PAGES_COLOR)
+    u.node(page.name_to_show, URL=page.url, color=FIRST_PAGES_COLOR, fontsize=NODE_FONT_SIZE)
     while page.name != "Philosophy":
         next_url = page.get_first_link()
         # if we got to the limit, reached a dead end or have duplicates in our road.
@@ -96,7 +104,7 @@ def draw_page_path(page, u, pages_drawn, debug=False):
                 break
 
             # we add the next page node
-            u.node(next_page.name_to_show, URL=next_page.url)
+            u.node(next_page.name_to_show, URL=next_page.url, fontsize=NODE_FONT_SIZE)
 
             page = next_page
     pages_drawn += road_of_page
@@ -122,7 +130,7 @@ def create_corresponding_copy(const_filename, first_pages, file_format):
 
     forbidden_file_name_chars = '\*?:/"<>|'
     for c in forbidden_file_name_chars:
-        new_file_name = new_file_name.replace(c,'')
+        new_file_name = new_file_name.replace(c, '')
 
     # get the current working dir
     src_dir = os.getcwd()
@@ -240,9 +248,21 @@ def draw_random_pages(u, num_of_pages, debug=False):
     return first_pages, num_drawn
 
 
-def main():
-    const_workfile_filename = "graph_drawn"
+def create_digraph():
+    u = Digraph('unix', filename=WORK_FILE_NAME, strict=True,
+                node_attr={'color': REGULAR_PAGES_COLOR, 'style': 'filled'}, )
+    u.attr(size='50,50')
+    return u
 
+
+def print_running_report(current_time, start_time, num_of_first_pages):
+    time_in_minutes = "{:.2f}".format((current_time - start_time) / 60)
+    print("run ended after:", time_in_minutes, "minutes")
+    print("ran on", num_of_first_pages, "names")
+    return time_in_minutes
+
+
+def main():
     '''
     The output file formats. I used .pdf and .svg which are both very convenient.
     I prefer .svg because the library supports making nodes clickable.
@@ -253,14 +273,13 @@ def main():
     '''
     output_file_formats = ["svg", "pdf"]
 
-    num_of_pages = [50, 60, 70]
+    num_of_pages = [20]
     for i in num_of_pages:
         if i < 1:
             continue
 
-        u = Digraph('unix', filename=const_workfile_filename, strict=True,
-                    node_attr={'color': REGULAR_PAGES_COLOR, 'style': 'filled'}, )
-        u.attr(size='50,50')
+        u = create_digraph()
+
         start_time = time.time()
 
         # if you want to draw i random articles.
@@ -288,13 +307,14 @@ def main():
         print("run ended after:", time_in_minutes, "minutes")
         print("ran on ", len(first_pages), "names")
         # adds a label with some details about the graph.
-        u.attr(label=create_label_for_output_file(first_pages, time_in_minutes, total_num_drawn), fontsize="20")
+        u.attr(label=create_label_for_output_file(first_pages, time_in_minutes, total_num_drawn),
+               fontsize=LABEL_FONT_SIZE)
 
         for output_format in output_file_formats:
             u.format = output_format
             u.view()
             # we create a copy of the graph we just generated, save it in ./output folder and give it a useful name.
-            create_corresponding_copy(const_workfile_filename, first_pages, output_format)
+            create_corresponding_copy(WORK_FILE_NAME, first_pages, output_format)
 
 
 if __name__ == '__main__':
