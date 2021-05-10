@@ -17,14 +17,14 @@ For example the following graph, which ran on these first pages:\
 <img src="./output_examples/7_0.svg" height="950">
 
 ## Installations
+1. ```pip install -r requirements.txt```
+2. Install Graphviz from here: https://www.graphviz.org/download/ and **make sure** that the directory containing the
+       dot executable is on your **systems’ path** !
 
-1. [bs4](https://pypi.org/project/beautifulsoup4/) ```pip install beautifulsoup4```
-2. [wikipedia](https://pypi.org/project/wikipedia/) ```pip install wikipedia```
-3. [Graphviz](https://pypi.org/project/graphviz/)
-    1. ```pip install graphviz```
-    2. Install Graphviz from here: https://www.graphviz.org/download/ and **make sure** that the directory containing the
-       dot executable is on your **systems’ path** !!\
-       VERY IMPORTANT STEP
+### Libraries used:
+- [bs4](https://pypi.org/project/beautifulsoup4/) to scrape information from web pages easily.
+- [wikipedia](https://pypi.org/project/wikipedia/) to access and parse data from Wikipedia.
+- [Graphviz](https://pypi.org/project/graphviz/) to create and render graphs.
        
 
 
