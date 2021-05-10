@@ -1,16 +1,22 @@
 strict digraph unix {
 	node [color=lightskyblue style=filled]
 	size="50,50"
-	"Battle of Salher" [URL="https://en.wikipedia.org/wiki/Battle_of_Salher" color=lightskyblue1 fontsize=12]
-	"Battle of Salher" -> "Maratha Empire"
-	"Maratha Empire" [URL="https://en.wikipedia.org/wiki/Maratha_Empire" fontsize=12]
-	"Maratha Empire" -> "Indian subcontinent"
-	"Indian subcontinent" [URL="https://en.wikipedia.org/wiki/Indian_subcontinent" fontsize=12]
-	"Indian subcontinent" -> "Physical geography"
-	"Physical geography" [URL="https://en.wikipedia.org/wiki/Physical_geography" fontsize=12]
-	"Physical geography" -> Geography
-	Geography [URL="https://en.wikipedia.org/wiki/Geography" fontsize=12]
-	Geography -> Science
+	"Tangerine (Dexter Gordon album)" [URL="https://en.wikipedia.org/wiki/Tangerine_(Dexter_Gordon_album)" color=lightskyblue1 fontsize=12]
+	"Tangerine (Dexter Gordon album)" -> "Prestige Records"
+	"Prestige Records" [URL="https://en.wikipedia.org/wiki/Prestige_Records" fontsize=12]
+	"Prestige Records" -> Jazz
+	Jazz [URL="https://en.wikipedia.org/wiki/Jazz" fontsize=12]
+	Jazz -> "Music genre"
+	"Music genre" [URL="https://en.wikipedia.org/wiki/Music_genre" fontsize=12]
+	"Music genre" -> Music
+	Music [URL="https://en.wikipedia.org/wiki/Music" fontsize=12]
+	Music -> "The arts"
+	"The arts" [URL="https://en.wikipedia.org/wiki/The_arts" fontsize=12]
+	"The arts" -> Creativity
+	Creativity [URL="https://en.wikipedia.org/wiki/Creativity" fontsize=12]
+	Creativity -> Psychology
+	Psychology [URL="https://en.wikipedia.org/wiki/Psychology" fontsize=12]
+	Psychology -> Science
 	Science [URL="https://en.wikipedia.org/wiki/Science" fontsize=12]
 	Science -> "Scientific method"
 	"Scientific method" [URL="https://en.wikipedia.org/wiki/Scientific_method" fontsize=12]
@@ -26,20 +32,5 @@ strict digraph unix {
 	"Outline of philosophy" [URL="https://en.wikipedia.org/wiki/Outline_of_philosophy" fontsize=12]
 	"Outline of philosophy" -> Philosophy
 	Philosophy [URL="https://en.wikipedia.org/wiki/Philosophy" fontsize=12]
-	"Sahawit Khumpiam" [URL="https://en.wikipedia.org/wiki/Sahawit_Khumpiam" color=lightskyblue1 fontsize=12]
-	"Sahawit Khumpiam" -> "Association football"
-	"Association football" [URL="https://en.wikipedia.org/wiki/Association_football" fontsize=12]
-	"Association football" -> "Team sport"
-	"Team sport" [URL="https://en.wikipedia.org/wiki/Team_sport" fontsize=12]
-	"Team sport" -> Sport
-	Sport [URL="https://en.wikipedia.org/wiki/Sport" fontsize=12]
-	Sport -> Competition
-	Competition [URL="https://en.wikipedia.org/wiki/Competition" fontsize=12]
-	Competition -> Goal
-	Goal [URL="https://en.wikipedia.org/wiki/Goal" fontsize=12]
-	Goal -> Idea
-	Idea [URL="https://en.wikipedia.org/wiki/Idea" fontsize=12]
-	Idea -> Philosophy
-	Philosophy [URL="https://en.wikipedia.org/wiki/Philosophy" fontsize=12]
-	fontsize=16 label="\lGraph generated on 10/05/2021 17:17:31.\lChecked 2 pages. Time took: 0.34 minutes.\lNumber of pages drawn: 21"
+	fontsize=16 label="\lGraph generated on 10/05/2021 17:37:42.\lChecked 1 pages. Time took: 0.28 minutes.\lNumber of pages drawn: 16"
 }

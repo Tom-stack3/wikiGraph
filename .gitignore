@@ -3,3 +3,4 @@ playing_around_graphviz/
 venv/
 __pycache__/
 .idea/
+graph_drawn.*
