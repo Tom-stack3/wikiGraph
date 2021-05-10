@@ -249,6 +249,11 @@ def draw_random_pages(u, num_of_pages, debug=False):
 
 
 def create_digraph():
+    """
+    Creates a default digraph.
+
+    :return: the Digraph created
+    """
     u = Digraph('unix', filename=WORK_FILE_NAME, strict=True,
                 node_attr={'color': REGULAR_PAGES_COLOR, 'style': 'filled'}, )
     u.attr(size='50,50')
@@ -256,21 +261,57 @@ def create_digraph():
 
 
 def print_running_report(current_time, start_time, num_of_first_pages):
+    """
+    prints  details about the run:
+     "run ended after: 0.34 minutes, ran on 2 names"
+
+    :param current_time: current time.
+    :param start_time: start time of the run.
+    :param num_of_first_pages: number of first pages drawn.
+    :return: the time in minutes took to run (String)
+
+    """
     time_in_minutes = "{:.2f}".format((current_time - start_time) / 60)
     print("run ended after:", time_in_minutes, "minutes")
     print("ran on", num_of_first_pages, "names")
     return time_in_minutes
 
 
+def handpick_and_draw(num_of_pages_to_draw, u, debug=False):
+    """
+    Allows the user to choose manually the first pages to draw on the digraph.
+
+    :param num_of_pages_to_draw: number of pages to draw.
+    :param u: the digraph to draw on.
+    :param debug: True - if you want to debug or get information about the program while it's running.
+                False - default
+    :type debug: bool
+    :return: the list of the first pages drawn (the names of the first pages) and the total number of pages drawn.
+    """
+    pages_to_draw = []
+    pages_drawn = []
+    first_pages = []
+    for _ in range(num_of_pages_to_draw):
+        pages_to_draw.append(WikiPage.choose_first_page_manually())
+
+    for page in pages_to_draw:
+        pages_drawn.append(draw_page_path(page, u, pages_drawn, debug))
+        first_pages.append(page.name)
+
+    total_num_drawn = len(pages_drawn)
+
+    return first_pages, total_num_drawn
+
+
 def main():
-    '''
+    """
     The output file formats. I used .pdf and .svg which are both very convenient.
     I prefer .svg because the library supports making nodes clickable.
     Graphviz documentation: https://graphviz.org/doc/info/output.html
-    
+
     e.g:
     output_file_formats = ["svg", "pdf", "jpg"]
-    '''
+    """
     output_file_formats = ["svg", "pdf"]
 
     num_of_pages = [20]
@@ -293,14 +334,8 @@ def main():
 
         # if you want to choose each page manually in the drawing
         '''
-        pages_drawn = []
         num_of_pages_to_connect = int(input("how many pages? "))
-        first_pages = []
-        for _ in range(num_of_pages_to_connect):
-            first_page = WikiPage.choose_first_page_manually()
-            pages_drawn.append(draw_page_path(first_page, u, pages_drawn, DEBUG))
-            first_pages.append(first_page.name)
-        total_num_drawn = len(pages_drawn)
+        first_pages, total_num_drawn = handpick_and_draw(num_of_pages_to_connect, u, DEBUG)
         '''
 
         time_in_minutes = "{:.2f}".format((time.time() - start_time) / 60)

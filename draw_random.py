@@ -21,13 +21,17 @@ output_file_formats = ["svg", "pdf"]
 
 
 def main():
-    '''
-    gets in args a list of numbers. e.g: 5 10
-    For each number, we draw a graph of "Getting to Philosophy" with this number of pages,
-     each page is chosen randomly.
+    """
+    Gets in args a list of numbers.
+    For each number, we draw a graph of "Getting to Philosophy" with this number of pages, each page is chosen randomly.
+
+    for example:
+    5 10
+    So to run the script on these pages, in the terminal:
+    python draw_random.py 5 10
 
     :return: None
-    '''
+    """
     args_list = sys.argv
     num_of_pages = [int(n) for n in args_list[1:]]
 
