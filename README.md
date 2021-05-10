@@ -1,4 +1,4 @@
-# Wiki Graph
+# Wiki Graph - Getting to Philosophy
 
 A script created to check the **"Getting to Philosophy"** phenomenon:\
 Clicking on the first link in the main text of an English Wikipedia article, and then repeating the process for
