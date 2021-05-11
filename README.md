@@ -27,6 +27,9 @@ For example the following graph, which ran on these first pages:\
 - [Graphviz](https://pypi.org/project/graphviz/) to create and render graphs.
        
 
+## Running the script
+
+
 
 ## How we decide what to click on?
 
