@@ -34,7 +34,7 @@ There are three options to run:
 
 1. `draw_pages.py`:
 
-   Gets a list of Wikipedia article names to draw. The program finds the closest article to each name entered and draws
+   Gets a list of Wikipedia article names to draw. The script finds the closest article to each name entered and draws
    the graph for the pages chosen.
 
    e.g:\
@@ -51,11 +51,21 @@ There are three options to run:
    Gets a list of integers. For each number in the arguments, the script generates and draws a graph, with randomly
    chosen articles. Each integer corresponds for the number of random articles in a drawing.
 
-   e.g:
+   e.g:\
    `python draw_random.py 10 18`
 
    Results in two graphs. One with 10 randomly chosen Wikipedia articles to start with, and one with 18 randomly chosen
    Wikipedia articles to start with.
+
+3. `draw_handpicked_pages.py`:
+
+   Gets a number of pages to draw. Then the script lets the user choose each Wikipedia article manually, (using console
+   I/O). After all the pages are chosen, the script generates the graph from the Wikipedia articles chosen.
+
+   e.g:\
+   `python draw_handpicked_pages.py 8`
+
+   Gives the user 8 articles to choose, and then draws the graph for the 8 Wikipedia articles chosen.
 
 ## How we decide what to click on?
 
