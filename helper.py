@@ -289,18 +289,10 @@ def handpick_and_draw(num_of_pages_to_draw, u, debug=False):
     :return: the list of the first pages drawn (the names of the first pages) and the total number of pages drawn.
     """
     pages_to_draw = []
-    pages_drawn = []
-    first_pages = []
     for _ in range(num_of_pages_to_draw):
         pages_to_draw.append(WikiPage.choose_first_page_manually())
 
-    for page in pages_to_draw:
-        pages_drawn.append(draw_page_path(page, u, pages_drawn, debug))
-        first_pages.append(page.name)
-
-    total_num_drawn = len(pages_drawn)
-
-    return first_pages, total_num_drawn
+    return draw_list_of_pages(pages_to_draw, u, debug)
 
 
 def main():
