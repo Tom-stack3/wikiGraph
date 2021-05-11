@@ -40,10 +40,10 @@ There are three options to run:
     `python draw_pages.py formula 1, Nervous system, Road Bicycle Racing, minerals, baseball, cafe`
    
     Results in the following graph: 
-    (to view raw: [7_0.svg](https://raw.githubusercontent.com/Tom-stack3/wikiGraph/master/output_examples/6_1.svg)
-, [7_0.pdf](https://raw.githubusercontent.com/Tom-stack3/wikiGraph/master/output_examples/6_1.pdf))
+    (to view raw: [6_1.svg](https://raw.githubusercontent.com/Tom-stack3/wikiGraph/master/output_examples/6_1.svg)
+, [6_1.pdf](https://raw.githubusercontent.com/Tom-stack3/wikiGraph/master/output_examples/6_1.pdf))
     
-    <img src="./output_examples/6_1.svg" height="950">
+    [6 Formula One+Nervous system+Road bicycle racing.svg](./output_examples/6_1.svg)
 
 ## How we decide what to click on?
 
