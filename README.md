@@ -32,7 +32,7 @@ For example the following graph, which ran on these first pages:\
 
 There are three options to run:
 
-1. `draw_pages.py`:
+### draw_pages.py:
 
    Gets a list of Wikipedia article names to draw. The script finds the closest article to each name entered and draws
    the graph for the pages chosen.
@@ -46,7 +46,7 @@ There are three options to run:
 
    [6 Formula One+Nervous system+Road bicycle racing.svg](./output_examples/6_1.svg)
 
-2. `draw_random.py`:
+### draw_random.py:
 
    Gets a list of integers. For each number in the arguments, the script generates and draws a graph, with randomly
    chosen articles. Each integer corresponds for the number of random articles in a drawing.
@@ -57,7 +57,7 @@ There are three options to run:
    Results in two graphs. One with 10 randomly chosen Wikipedia articles to start with, and one with 18 randomly chosen
    Wikipedia articles to start with.
 
-3. `draw_handpicked_pages.py`:
+### draw_handpicked_pages.py:
 
    Gets a number of pages to draw. Then the script lets the user choose each Wikipedia article manually, (using console
    I/O). After all the pages are chosen, the script generates the graph from the Wikipedia articles chosen.
