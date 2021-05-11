@@ -32,18 +32,30 @@ For example the following graph, which ran on these first pages:\
 
 There are three options to run:
 
-1. `draw_pages.py`:\
+1. `draw_pages.py`:
+
    Gets a list of Wikipedia article names to draw. The program finds the closest article to each name entered and draws
    the graph for the pages chosen.
-    
-    e.g:\
-    `python draw_pages.py formula 1, Nervous system, Road Bicycle Racing, minerals, baseball, cafe`
-   
-    Results in the following graph: 
-    (to view raw: [6_1.svg](https://raw.githubusercontent.com/Tom-stack3/wikiGraph/master/output_examples/6_1.svg)
-, [6_1.pdf](https://raw.githubusercontent.com/Tom-stack3/wikiGraph/master/output_examples/6_1.pdf))
-    
-    [6 Formula One+Nervous system+Road bicycle racing.svg](./output_examples/6_1.svg)
+
+   e.g:\
+   `python draw_pages.py formula 1, Nervous system, Road Bicycle Racing, minerals, baseball, cafe`
+
+   Results in the following graph:
+   (to view raw: [6_1.svg](https://raw.githubusercontent.com/Tom-stack3/wikiGraph/master/output_examples/6_1.svg)
+   , [6_1.pdf](https://raw.githubusercontent.com/Tom-stack3/wikiGraph/master/output_examples/6_1.pdf))
+
+   [6 Formula One+Nervous system+Road bicycle racing.svg](./output_examples/6_1.svg)
+
+2. `draw_random.py`:
+
+   Gets a list of integers. For each number in the arguments, the script generates and draws a graph, with randomly
+   chosen articles. Each integer corresponds for the number of random articles in a drawing.
+
+   e.g:
+   `python draw_random.py 10 18`
+
+   Results in two graphs. One with 10 randomly chosen Wikipedia articles to start with, and one with 18 randomly chosen
+   Wikipedia articles to start with.
 
 ## How we decide what to click on?
 
