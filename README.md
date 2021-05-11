@@ -17,19 +17,33 @@ For example the following graph, which ran on these first pages:\
 <img src="./output_examples/7_0.svg" height="950">
 
 ## Installations
+
 1. ```pip install -r requirements.txt```
 2. Install Graphviz from here: https://www.graphviz.org/download/ and **make sure** that the directory containing the
-       dot executable is on your **systems’ path** !
+   dot executable is on your **systems’ path** !
 
 ### Libraries used:
+
 - [bs4](https://pypi.org/project/beautifulsoup4/) to scrape information from web pages easily.
 - [wikipedia](https://pypi.org/project/wikipedia/) to access and parse data from Wikipedia.
 - [Graphviz](https://pypi.org/project/graphviz/) to create and render graphs.
-       
 
 ## Running the script
 
+There are three options to run:
 
+1. `draw_pages.py`:\
+   Gets a list of Wikipedia article names to draw. The program finds the closest article to each name entered and draws
+   the graph for the pages chosen.
+    
+    e.g:\
+    `python draw_pages.py formula 1, Nervous system, Road Bicycle Racing, minerals, baseball, cafe`
+   
+    Results in the following graph: 
+    (to view raw: [7_0.svg](https://raw.githubusercontent.com/Tom-stack3/wikiGraph/master/output_examples/6_1.svg)
+, [7_0.pdf](https://raw.githubusercontent.com/Tom-stack3/wikiGraph/master/output_examples/6_1.pdf))
+    
+    <img src="./output_examples/6_1.svg" height="950">
 
 ## How we decide what to click on?
 
@@ -55,7 +69,8 @@ You can go take a look on the checks it does, but in general we check the follow
     2. smaller text (```<small>```)
     3. supper text (```<sup>```)
 
-4. It is not a link to a disambiguation page <i>( [disambiguation](https://en.wikipedia.org/wiki/Category:Disambiguation_pages) )</i>.
+4. It is not a link to a disambiguation
+   page <i>( [disambiguation](https://en.wikipedia.org/wiki/Category:Disambiguation_pages) )</i>.
 
 ## How the graph is generated?
 
