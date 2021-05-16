@@ -145,4 +145,6 @@ raw: [philosophy.svg](https://raw.githubusercontent.com/Tom-stack3/wikiGraph/mas
 
 ## Examples:
 
+Check out the folder [output_examples](./output_examples) for some examples of generated graphs.
+
 <sup>*Created by Tommy Zaft*</sup>
